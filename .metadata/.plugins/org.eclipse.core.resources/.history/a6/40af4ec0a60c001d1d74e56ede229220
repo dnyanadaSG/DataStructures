@@ -1,0 +1,33 @@
+package com.java.SingleLinkedList;
+
+public class CreateLinkedList {
+	Node head;  // head of list
+
+    /* Linked list Node.  This inner class is made static so that
+      main() can access it */
+    static class Node {
+        Node next;
+        int data;
+
+         Node(int data) {
+             this.data = data;
+             next = null;
+         }
+
+    }
+    //To print linkedlist
+    public void printList()
+    {
+        Node n = head;
+        while (n != null) {
+            System.out.print(n.data + " ");
+            n = n.next;
+        }
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
