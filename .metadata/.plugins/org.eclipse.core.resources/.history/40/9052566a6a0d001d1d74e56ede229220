@@ -1,0 +1,55 @@
+package com.java.SingleLinkedList;
+
+public class DeleteNodeInLinkedList {
+	Node head;
+	
+	static class Node {
+		Node next;
+		int data;
+		
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+	
+	 /* This function prints contents of linked list starting
+    from the given node */
+	public void printList() {
+		Node temp = head;
+		while(temp != null) {
+			System.out.print(temp.data + " ");
+			temp = temp.next;
+		}
+	}
+	
+	/* Inserts a new Node at front of the list. */
+	public void add(int newData) {
+		Node newNode = new Node (newData);
+		newNode.next= head;
+		head = newNode;
+	}
+	
+	  /* Given a key, deletes the first
+    occurrence of key in
+  * linked list */
+	public void deleteNode(int data) {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DeleteNodeInLinkedList llist = new DeleteNodeInLinkedList();
+		
+		llist.add(7);
+		llist.add(1);
+		llist.add(2);
+		llist.add(3);
+		
+		System.out.println("\nCreated Linked list is:");
+        llist.printList();
+		
+
+	}
+
+}

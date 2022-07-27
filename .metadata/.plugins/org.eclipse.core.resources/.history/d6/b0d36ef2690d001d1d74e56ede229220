@@ -1,0 +1,28 @@
+package com.java.SingleLinkedList;
+
+public class DeleteNodeInLinkedList {
+	Node head;
+	
+	static class Node {
+		Node next;
+		int data;
+		
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+	
+	public void printList() {
+		Node temp = head;
+		while(temp != null) {
+			System.out.print(temp.data + " ");
+			temp = temp.next
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
