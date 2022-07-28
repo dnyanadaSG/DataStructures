@@ -1,0 +1,25 @@
+package com.java.SingleLinkedList;
+
+public class InfoForLinkedList {
+
+}
+
+/*
+ * The various types of linked lists are as follows:
+
+Singly Linked List: It is the most basic linked list in which traversal is 
+unidirectional i.e. from the head node to the last node.
+
+Doubly Linked List: In this linked list, traversal can be done in both ways, 
+and hence it requires an extra pointer.
+
+Circular Linked List: This linked list is unidirectional but in this list, 
+the last node points to the first i.e. the head node and hence it becomes 
+circular in nature.
+
+Circular Doubly Linked List: The circular doubly linked list is a combination 
+of the doubly linked list and the circular linked list. It means that this 
+linked list is bidirectional and contains two pointers and the last pointer 
+points to the first pointer.
+ * 
+ * */
