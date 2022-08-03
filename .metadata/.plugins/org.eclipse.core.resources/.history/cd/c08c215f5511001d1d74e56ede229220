@@ -1,0 +1,53 @@
+package com.java.SingleLinkedList;
+
+public class SearchElementInList {
+	Node head;
+
+	static class Node {
+		Node next;
+		int data;
+		
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+	
+	public void add(int newData) {
+		Node newNode = new Node(newData);
+		newNode.next = head;
+		head = newNode;
+	}
+	
+	public boolean searchElement(Node n, int data) {
+		Node temp = head;
+		
+		while(temp != null) {
+			if(temp.data == data)
+				return true;
+			temp = temp.next;
+		}
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SearchElementInList seList = new SearchElementInList();
+		
+		
+		 /*Use push() to construct below list
+        14->21->11->30->10  */
+		seList.add(10);
+		seList.add(30);
+		seList.add(11);
+		seList.add(21);
+		seList.add(14);
+		
+		 if (seList.searchElement(seList.head, 21))  {
+			 System.out.println("Yes");
+		 } else {
+			 System.out.println("No");
+		 }
+	}
+
+}

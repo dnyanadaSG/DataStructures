@@ -1,0 +1,36 @@
+package com.java.SingleLinkedList;
+
+public class FindNthNodeFromEnd {
+	Node head;
+	
+	static class Node {
+		int data;
+		Node next;
+		
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+	
+	public void add(int data) {
+		Node newNode = new Node(data);
+		newNode.next = head;
+		head = newNode;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FindNthNodeFromEnd llist = new FindNthNodeFromEnd();
+		
+		 /*Use add() to construct below list
+	       14->21->11->30->10  */	
+			llist.add(10);
+			llist.add(30);
+			llist.add(11);
+			llist.add(21);
+			llist.add(14);
+			
+	}
+
+}

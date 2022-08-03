@@ -1,0 +1,56 @@
+package com.java.SingleLinkedList;
+
+import com.java.SingleLinkedList.GetNthNode.Node;
+
+public class GetNthNodeInRecursive {
+	Node head;
+
+	static class Node {
+		Node next;
+		int data;
+		
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+	
+	public void add(int newData) {
+		Node newNode = new Node(newData);
+		newNode.next = head;
+		head = newNode;
+	}
+
+	public int GetNth(Node n, int index) {
+		int count = 0;
+		Node temp = n;
+		
+		if(temp == null)
+			return -1;
+		
+		if(count == index)
+			return temp.data;
+		
+		return GetNth(temp.next, index-1);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GetNthNodeInRecursive llist = new GetNthNodeInRecursive();
+		
+		 /*Use add() to construct below list
+       14->21->11->30->10  */	
+		llist.add(10);
+		llist.add(30);
+		llist.add(11);
+		llist.add(21);
+		llist.add(14);
+		
+		 /* Check the count function */
+       System.out.println("Element at index 3 is " + llist.GetNth(llist.head,3));
+
+
+	}
+
+}

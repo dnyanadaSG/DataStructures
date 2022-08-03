@@ -1,0 +1,26 @@
+package com.java.SingleLinkedList;
+
+public class SearchElementInListInRecursive {
+	Node head;
+
+	static class Node {
+		Node next;
+		int data;
+		
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+	
+	public void add(int newData) {
+		Node newNode = new Node(newData);
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
